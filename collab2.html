@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collaboration Room</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Forum Name</a>
+    <!-- Add any additional navigation elements you need -->
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <!-- Replace 'Topic 1' with the dynamic data for the selected topic -->
+  <h2>Collaboration Room: Topic 1</h2>
+
+  <!-- Main post section -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <p class="card-text">User 1: This is the main post content. It could be a longer piece of text, an image, or other multimedia.</p>
+    </div>
+  </div>
+
+  <!-- Discussion section -->
+  <div>
+    <!-- Discussion posts go here (replace with dynamic data) -->
+    <div class="card mb-2">
+      <div class="card-body">
+        <p class="card-text">User 2: I agree with the main post.</p>
+      </div>
+    </div>
+
+    <div class="card mb-2">
+      <div class="card-body">
+        <p class="card-text">User 3: Disagree. Here's why...</p>
+      </div>
+    </div>
+
+    <!-- Add more discussion posts dynamically -->
+  </div>
+
+  <!-- Add a form for users to submit new posts -->
+  <form class="mt-4">
+    <div class="mb-3">
+      <label for="postContent" class="form-label">Your Comment</label>
+      <textarea class="form-control" id="postContent" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Post Comment</button>
+  </form>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

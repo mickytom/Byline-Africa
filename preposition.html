@@ -10,10 +10,27 @@
   <title>Economist-Byline Africa</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap"
     rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
   <link rel="stylesheet" href="assets/css/style-starter.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
+<style>
+  .card {
+    margin: 1px;
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: scale(0.95);
+  }
+
+  .card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+</style>
 
 <body>
 
@@ -44,10 +61,10 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="services.html">Services</a>
             </li>
            
@@ -134,154 +151,84 @@
     <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
       <ul class="breadcrumbs-custom-path mt-3 text-center pt-5">
         <li><a href="index.html">Home</a></li>
-        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> News </li>
+        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> About Us </li>
+        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Preposition </li>
       </ul>
     </div>
   </div>
+  <!--//breadcrumb-bg-->
 
 
+  <section class="w3l-content-2 w3l-stats-1 py-5">
 
-  <section class="w3l-blog py-5" id="blog">
-    <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-left">
-        <!-- <h6 class="title-subhny">Insight and Trends</h6>
-        <h3 class="title-w3l pb-sm-o pb-2">Latest News and Events</h3> -->
+    <div class="container" >
+          <h3>Value Preposition </h3>
+          <p>The Economist-Byline Africa website offers a compelling value proposition 
+            for individuals and organizations seeking to contribute to Africa's economic growth and development.
+             By joining us, you gain access to unique resources, networks, and opportunities to drive positive 
+             change in Africa's economic landscape. Our website provides the following benefits to visitors/users:
 
+          </p>
       </div>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-8">
-    
-            <!-- Tabs Section -->
-            <ul class="nav nav-tabs" id="myTabs">
-              <li class="nav-item">
-                <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1">Latest</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2">Past</a>
-              </li>
-            </ul>
-    
-            <div class="tab-content mt-3">
-              <!-- Tab 1 Content -->
-              <div class="tab-pane fade show active" id="content1">
-                <h5>Latest News and Events</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-    
-              <!-- Tab 2 Content -->
-              <div class="tab-pane fade show fade" id="content2">
-                <h5>Past News and Events</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="col-md-4 mt-md-0 mt-3">
-    
-            <!-- Filter Component -->
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Filter</h5>
-                <!-- Add your filter components here -->
-                <label for="filterOption">Select Filter:</label>
-                <select class="form-select" id="filterOption">
-                  <option value="option3">--Select Filter--</option>
-                  <option value="option1">  By Date</option>
-                  <option value="option2">By Author</option>
-                </select>
-              </div>
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    
+    <div class="container py-md-5 py-2">
       
-      <div class="row text-11">
-        <!-- Card 1 -->
-        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b3.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate...</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Card 2 -->
-        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b4.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate...</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Card 3 -->
-        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b3.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate...</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Card 4 -->
-        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b4.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate...</p>
-            </div>
-          </div>
-        </div>
-  
+      <div class="title-content text-left">
+        
+        <h5>Comprehensive Educational Resources: </h5>
+        <p>Access a wealth of educational audio-visual content on various topics relevant to Africa's economic landscape.
+             Our resources are designed to foster learning, raise awareness, and promote critical thinking among our audience.
+              Stay informed about the latest trends, research, and best practices shaping Africa's economic future.
+
+        </p><br>
+        <h5>Expert Literature Review and Analysis: </h5>
+        <p>Gain insights from our team of experts who conduct rigorous reviews and analyses of scientific articles and publications.
+             We distil complex economic development research into digestible and actionable information, empowering policymakers,
+              scholars, and practitioners with evidence-based knowledge to drive informed decision-making. 
+              By bridging the gap between research and practice, we contribute to effective policy formulation, 
+              implementation, and evaluation, ultimately fostering sustainable economic development in Africa.
+
+        </p><br>
+        <h5>Empowering the Next Generation:  </h5>
+        <p>Our capacity-building programs aim to enhance your skills and understanding of economic development
+             through our specialized capacity-building programs. Designed for young economists, policymakers, 
+             and development practitioners, these programs equip participants with the tools, frameworks, 
+             and practical knowledge necessary to navigate the intricacies of Africa's economic landscape and 
+             contribute to sustainable development. Through our programs, workshops, seminars, and training initiatives, 
+             we empower individuals with the necessary skills, knowledge, and networks to actively contribute to Africa's 
+              economic transformation.
+        </p><br>
+        <h5>Thought Leadership and Networking Opportunities:   </h5>
+        <p>We provide an interactive platform for interdisciplinary collaboration.
+             Engage in discussions, share ideas, and collaborate with a diverse community of scholars,
+              policymakers, and development practitioners. Our website provides a dynamic platform for networking,
+               knowledge sharing, and innovative problem-solving. Connect with like-minded individuals 
+               and organizations to foster collaborations and drive collective impact. By being part of the Economist-Byline Africa,
+                individuals gain access to a vibrant community of thought leaders, experts, and influencers in the field of African 
+                economics and development. We provide networking opportunities, foster connections, and facilitate meaningful 
+                collaborations that enable individuals to expand their professional horizons and create lasting impact.
+
+        </p><br>
+        <h5>Opportunities for Engagement  </h5>
+        <p>Stay updated on upcoming events, workshops, and conferences related to economic growth and development in Africa. 
+            Our website serves as a central hub for information, allowing you to actively participate in relevant initiatives
+             and contribute to the broader discourse. Engage in meaningful conversations, explore partnership opportunities,
+              and showcase your work to a targeted audience. Through this collaborative network, we encourage knowledge sharing, 
+              linkages, and collaborations that generate innovative solutions to Africa's economic challenges. 
+              By fostering interdisciplinary dialogue and collaboration, we promote holistic and integrated approaches
+               to addressing complex economic issues.
+
+        </p><br>
       </div>
+      
     </div>
+
+
+
   </section>
-  
+
+
+
 
   <!--/footer-->
   <section class="w3l-footer-29-main">
@@ -365,6 +312,14 @@
       </div>
     </div>
 
+      <!-- Add this script at the end of your body or in the head section -->
+<script>
+  function openModal(id) {
+    var modal = new bootstrap.Modal(document.getElementById('modalCard' + id));
+    modal.show();
+  }
+</script>
+
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
       &#10548;
@@ -435,6 +390,7 @@
   </script>
   <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

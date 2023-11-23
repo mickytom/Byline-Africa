@@ -14,6 +14,24 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
+<style>
+  .card {
+    margin: 1px;
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: scale(0.95);
+  }
+
+  .card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
 <body>
 
   <!--header-->
@@ -141,6 +159,7 @@
 
 
   <section class="w3l-content-2 w3l-stats-1 py-5">
+
     <div class="container py-md-5 py-2">
       
       <div class="title-content text-left">
@@ -158,97 +177,338 @@
       
     </div>
 
-    <div class="container py-md-5 py-2">
-      
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-1</h6>
-        <h3>No Poverty: </h3>
-        <p>Africa has a significant proportion of its population living in poverty. 
-          Economic policies and programmes that focus on poverty eradication, social protection,
-           and inclusive growth are crucial in achieving this goal. These policies and programmes may 
-           include targeted interventions for vulnerable populations, access to quality education and healthcare, 
-           and promoting decent employment opportunities.
-        </p>
+      <!--/w3l-pricing-->
+  <section class="w3l-pricing-sec py-5" id="pricing">
+    <div class="container py-md-5 py-2 galprojects-gd-content">
+      <div class="row pricing-main-grids mt-3">
+
+        <div class="col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(1)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/savinglives2.jpg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">No Poverty</h4>
+              <span>Africa has a significant proportion of its population living in poverty. Economic ...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(2)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/growth-chart.jpg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Work & Growth</h4>
+              <span>This goal emphasizes the need for sustained, inclusive, and sustainable ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(3)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/industry.jpg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Industrialization </h4>
+              <span>Building resilient infrastructure, promoting inclusive and sustainable industrialization ... </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(4)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/inequality.png" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Reduced Inequalities</h4>
+              <span>Addressing economic inequalities is critical in Africa, where disparities between ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(5)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/consumption.png" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Responsible Production</h4>
+              <span>Africa's economic policies and programmes that consider sustainable consumption ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(6)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/climate.jpeg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Climate Action:</h4>
+              <span>African countries are particularly vulnerable to the impacts of climate ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(7)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/partnership.webp" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Partnerships</h4>
+              <span>Building strong partnerships and collaborations among governments ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(8)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/zerohunger.jpg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Zero hunger</h4>
+              <span>Building strong partnerships and collaborations among governments ... </span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4" onclick="openModal(9)">
+          <div class="w3-pricing-inner-inf card">
+            <div class="pricing-header">
+              <div class="price-wrapper">
+                <img src="assets/images/energy.jpg" style="width: 100%; height: 200px;">
+              </div>
+              <h4 class="crd-heading">Clean Energy</h4>
+              <span>Building strong partnerships and collaborations among governments... </span>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
+    </div>
+  </section>
+  <!-- //w3l-pricing-->
 
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-8</h6>
-        <h3>Decent Work and Economic Growth: </h3>
-        <p>This goal emphasizes the need for sustained, inclusive,
-           and sustainable economic growth, full and productive employment,
-            and decent work for all. Economic policies and programmes in Africa 
-            that focus on creating job opportunities, promoting entrepreneurship, 
-            and ensuring fair wages and safe working conditions.
-
-        </p>
-      </div>
-
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-9</h6>
-        <h3>Industry, Innovation and Infrastructure: </h3>
-        <p>Building resilient infrastructure, promoting inclusive
-           and sustainable industrialization, and fostering innovation 
-           are essential for economic development in Africa.
-            Investment in infrastructure projects, support for technological advancements,
-             and policies and programmes that attract foreign direct investment can all contribute to achieving this goal.
-        </p>
-      </div>
-
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-10</h6>
-        <h3>Reduced Inequalities: </h3>
-        <p>Addressing economic inequalities is critical in Africa,
-           where disparities between different social and economic groups are significant. 
-           Economic policies and programmes that aim to reduce income inequality, 
-          improve access to basic services, and empower marginalized communities are imperative.
-        </p>
-      </div>
-      
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-12</h6>
-        <h3>Responsible Consumption and Production: </h3>
-        <p>Africa's economic policies and programmes that consider sustainable 
-          consumption and production patterns to ensure the efficient use of resources
-           and minimize waste and environmental impact. Encouraging eco-friendly practices,
-            promoting circular economy initiatives, and adopting green technologies are all relevant in this context.
-        </p>
-      </div>
-
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-13</h6>
-        <h3>Climate Action: </h3>
-        <p>African countries are particularly vulnerable to the impacts of climate change.
-           Economic policies and programmes that incorporate climate-resilient strategies, 
-           such as promoting renewable energy, sustainable agriculture, and environmental conservation, 
-          to mitigate climate-related risks and support long-term economic growth are examined.
-        </p>
-      </div>
-
-      <div class="title-content text-left mb-4">
-        <h6 class="title-subhny">SDG-17</h6>
-        <h3>Partnerships for the Goals: </h3>
-        <p>Building strong partnerships and collaborations among governments, 
-          private sectors, civil society, and international organizations is 
-          crucial for effective economic policymaking in Africa. Cooperation 
-          with other countries and organizations can facilitate technology transfer, 
-          knowledge-sharing, and access to financial resources.
-
-        </p>
-      </div>
-
-    </div> 
-    
 
   </section>
 
 
 
+<!-- Modal for Card -->
+
+<div class="modal fade" id="modalCard1" tabindex="-1" role="dialog" aria-labelledby="modalCard1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard1Label">SDG-1 - No Poverty: </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Africa has a significant proportion of its population living in poverty. 
+          Economic policies and programmes that focus on poverty eradication, social protection,
+           and inclusive growth are crucial in achieving this goal. These policies and programmes may 
+           include targeted interventions for vulnerable populations, access to quality education and healthcare, 
+          and promoting decent employment opportunities.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard2" tabindex="-1" role="dialog" aria-labelledby="modalCard2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard2Label">SDG-8 - Decent Work and Economic Growth: </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">This goal emphasizes the need for sustained, 
+          inclusive, and sustainable economic growth, full and productive employment, and decent work for all. Economic policies 
+          and programmes in Africa that focus on creating job opportunities, promoting entrepreneurship, 
+          and ensuring fair wages and safe working conditions.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard3" tabindex="-1" role="dialog" aria-labelledby="modalCard3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard3Label">SDG-9 - Industry, Innovation and Infrastructure: </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Building resilient infrastructure, promoting inclusive and sustainable industrialization, 
+          and fostering innovation are essential for economic development in Africa. Investment in infrastructure projects, 
+          support for technological advancements, and policies and programmes that attract foreign direct
+           investment can all contribute to achieving this goal.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard4" tabindex="-1" role="dialog" aria-labelledby="modalCard4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard4Label">SDG-10 - Reduced Inequalities:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Addressing economic inequalities is critical in Africa, 
+          where disparities between different social and economic groups are significant. 
+          Economic policies and programmes that aim to reduce income inequality, improve access to basic services,
+           and empower marginalized communities are imperative.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard5" tabindex="-1" role="dialog" aria-labelledby="modalCard5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard5Label">SDG-12 - Responsible Consumption and Production:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Africa's economic policies and programmes that consider sustainable consumption 
+          and production patterns to ensure the efficient use of resources and minimize waste and environmental impact. 
+          Encouraging eco-friendly practices, promoting circular economy initiatives, 
+          and adopting green technologies are all relevant in this context.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalCard6" tabindex="-1" role="dialog" aria-labelledby="modalCard6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard6Label">SDG-13 - Climate Action:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">African countries are particularly vulnerable to the impacts of climate change.
+           Economic policies and programmes that incorporate climate-resilient strategies, such as promoting renewable energy,
+            sustainable agriculture, and environmental conservation,
+           to mitigate climate-related risks and support long-term economic growth are examined.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard7" tabindex="-1" role="dialog" aria-labelledby="modalCard7Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard7Label">SDG-17 - Partnerships for the Goals:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Building strong partnerships and collaborations among governments, 
+          private sectors, civil society, and international organizations is crucial for effective economic policymaking in Africa.
+           Cooperation with other countries and organizations can facilitate technology transfer, 
+          knowledge-sharing, and access to financial resources.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard8" tabindex="-1" role="dialog" aria-labelledby="modalCard8Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard8Label">SDG-17 - Zero Hunger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Building strong partnerships and collaborations among governments, 
+          private sectors, civil society, and international organizations is crucial for effective economic policymaking in Africa.
+           Cooperation with other countries and organizations can facilitate technology transfer, 
+          knowledge-sharing, and access to financial resources.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard9" tabindex="-1" role="dialog" aria-labelledby="modalCard9Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCard9Label">SDG-17 - Affordable & Clean Energy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%; height: 200px;"></div>
+        <p class="crd-text mt-3">Building strong partnerships and collaborations among governments, 
+          private sectors, civil society, and international organizations is crucial for effective economic policymaking in Africa.
+           Cooperation with other countries and organizations can facilitate technology transfer, 
+          knowledge-sharing, and access to financial resources.</p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add any additional buttons or content here -->
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!--/w3l-pricing-->
   <section class="w3l-pricing-sec py-5" id="pricing">
-    <div class="container py-md-5 py-2">
-      <div class="title-content text-left">
+    <div class="container py-md-5 py-2 galprojects-gd-content">
+      <div class="title-content text-left crd--effect-3">
         <h6 class="title-subhny">Our Plans</h6>
         <h3 class="title-w3l">Pricing Table</h3>
       </div>
@@ -284,6 +544,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4">
           <div class="w3-pricing-inner-inf">
             <div class="pricing-header">
@@ -315,6 +576,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 pricing-main-grid mt-sm-5 mt-4">
           <div class="w3-pricing-inner-inf">
             <div class="pricing-header">
@@ -347,10 +609,14 @@
           </div>
         </div>
 
+
       </div>
     </div>
   </section>
   <!-- //w3l-pricing-->
+
+
+
   <!--/footer-->
   <section class="w3l-footer-29-main">
     <div class="footer-29 py-5">
@@ -433,6 +699,14 @@
       </div>
     </div>
 
+      <!-- Add this script at the end of your body or in the head section -->
+<script>
+  function openModal(id) {
+    var modal = new bootstrap.Modal(document.getElementById('modalCard' + id));
+    modal.show();
+  }
+</script>
+
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
       &#10548;
@@ -503,6 +777,7 @@
   </script>
   <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

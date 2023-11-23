@@ -15,6 +15,26 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
+<style>
+  .card {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as needed */
+    color: #fff;
+  }
+
+  .inner-card {
+    background: rgb(255, 255, 255); /* Semi-transparent background for text */
+    margin: 20px;
+    padding: 16px;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>
+
+
 <body>
 
   <!--header-->
@@ -38,9 +58,7 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mx-lg-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
+           
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 About Us
@@ -50,19 +68,41 @@
                 <li><a class="dropdown-item" href="mission.html">Our Mission</a></li>
                 <li><a class="dropdown-item" href="objectives.html">Our Objectives</a></li>
                 <li><a class="dropdown-item" href="preposition.html">Value Preposition</a></li>
+               
                 <li><a class="dropdown-item" href="team.html">Team</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               What we offer
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="collaboaration.html">Collaboration</a></li>
+                <li><a class="dropdown-item" href="career.html">Career centre & Mentoring</a></li>
+                <li><a class="dropdown-item" href="archive.html">Archive</a></li>
+                <li><a class="dropdown-item" href="funding.html">Funding Opportunities</a></li>
+                <li><a class="dropdown-item" href="publications.html">Publications</a></li>  
+                    
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               News
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="latestnews.html">Latest News</a></li>
+                <li><a class="dropdown-item" href="oldnews.html">Old News</a></li>         
+              </ul>
             </li>
            
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services.html">Priorities</a>
             </li>
            
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="support.html">Support</a>
             </li>
             <!--/search-right-->
             <li class="nav-item search-right ml-lg-3">
@@ -115,8 +155,8 @@
           </ul>
           <!--/right-btn-->
           <div class="top-righthny-buttton">
-            <a class="btn btn-style btn-white mr-lg-5" href="contact.html">
-              Get In Touch <span class="fa fa-long-arrow-right ml-3" aria-hidden="true"></span></a>
+            <a class="btn btn-style btn-white mr-lg-5" href="login.html">
+              Get Started</a>
           </div>
           <!--/right-btn-->
         </div>
@@ -186,6 +226,9 @@
     </div>
   </section>
   <!--//w3l-clients-->
+
+
+
   <!-- //w3l-inner-page-breadcrumb-->
   <section class="w3l-about-ab pt-lg-3" id="about">
     <div class="midd-w3 py-5">
@@ -194,6 +237,9 @@
           <h6 class="title-subhny">Who We Are</h6>
           <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2">Economist-Byline Africa</h3>
         </div>
+
+
+
         <div class="row">
           <div class="col-lg-5 left-wthree-img pr-lg-4">
             <div class="imgw3l-ab mb-md-5 mb-3">
@@ -278,6 +324,95 @@
     </div>
   </section>
 
+  <section class="w3l-blog py-5" id="blog">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="title-content text-left">
+        <h6 class="title-subhny">Insight and Trends</h6>
+        <h3 class="title-w3l pb-sm-o pb-2">Latest News and Events</h3>
+      </div>
+
+      <div class="row text-11">
+        <!-- Card 1 -->
+        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+          <div class="card">
+            <div class="card-header p-0 position-relative border-0">
+              <a href="#">
+                <img class="card-img-bottom d-block radius-image" src="assets/images/climate.jpeg" height="200px" alt="Card image cap">
+              </a>
+            </div>
+            <div class="card-body p-0 blog-details">
+              <h6 class="mt-4">May 12, 2021.</h6>
+              <a href="#admin" class="admin">- by Blanche Smith</a>
+              <br>
+              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                voluptate...</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+          <div class="card">
+            <div class="card-header p-0 position-relative border-0">
+              <a href="#">
+                <img class="card-img-bottom d-block radius-image" src="assets/images/growth-chart.jpg" height="200px" alt="Card image cap">
+              </a>
+            </div>
+            <div class="card-body p-0 blog-details">
+              <h6 class="mt-4">May 12, 2021.</h6>
+              <a href="#admin" class="admin">- by Blanche Smith</a>
+              <br>
+              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                voluptate...</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+          <div class="card">
+            <div class="card-header p-0 position-relative border-0">
+              <a href="#">
+                <img class="card-img-bottom d-block radius-image" src="assets/images/energy.jpg" height="200px" alt="Card image cap">
+              </a>
+            </div>
+            <div class="card-body p-0 blog-details">
+              <h6 class="mt-4">May 12, 2021.</h6>
+              <a href="#admin" class="admin">- by Blanche Smith</a>
+              <br>
+              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                voluptate...</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+          <div class="card">
+            <div class="card-header p-0 position-relative border-0">
+              <a href="#">
+                <img class="card-img-bottom d-block radius-image" src="assets/images/industry.jpg" height="200px" alt="Card image cap">
+              </a>
+            </div>
+            <div class="card-body p-0 blog-details">
+              <h6 class="mt-4">May 12, 2021.</h6>
+              <a href="#admin" class="admin">- by Blanche Smith</a>
+              <br>
+              <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                voluptate...</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
   <!-- /why-->
   <section class="w3l-content-2 py-5">
     <div class="container py-md-5 py-2">
@@ -334,210 +469,24 @@
                 contribute to achieving this goal.
               </p>
             </div>
-            <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span
+            <a href="services.html" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span
               class="fa fa-long-arrow-right ml-3" aria-hidden="true"></span></a>
           </div>
         </div>
         <div class="col-lg-6 whybox-wrap-img pl-lg-5 mt-lg-0 mt-4">
           <div class="imgw3l-ab mb-md-5 mb-3">
-            <img src="assets/images/ab2.jpg" alt="" class="radius-image img-fluid">
+            <img src="assets/images/consumption.png" alt="" class="radius-image img-fluid">
           </div>
         </div>
+        
 
       </div>
     </div>
   </section>
   <!-- //w3l-why-->
 
-  <!--/gallery-->
-  <section class="w3l-gallery py-5" id="projects">
-    <div class="container py-md-5 py-2">
-      <div class="title-content text-left">
-        
-        <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2">Our Latest Projects</h3>
-      </div>
-      <div class="row w3l-galprojects no-gutters">
-        <div class="col-md-6 galprojects-gd mt-md-0 mt-5">
-          <div class="galprojects-gd-content">
-            <div class="crd crd--effect-3">
-              <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%;"></div>
-              <div class="crd-info text-left">
-                <h2 class="crd-heading">Saving Lives</h2>
-                <p class="crd-text">Ibadan, Nigeria.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 galprojects-gd mt-md-0 mt-5">
-          <div class="galprojects-gd-content">
-            <div class="crd crd--effect-3">
-              <div class="crd-img" style="background-image:url(assets/images/savinglives2.jpg);background-position:100%;"></div>
-              <div class="crd-info text-left">
-                <h2 class="crd-heading">Medical Provisions</h2>
-                <p class="crd-text">Johannersburg, South Africa.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-      </div>
-    </div>
-  </section>
-  <!--//gallery-->
-  <!-- testimonials -->
-  <section class="w3l-clients-1" id="testimonials">
-    <!-- /grids -->
-    <div class="cusrtomer-layout py-5">
-      <div class="container py-lg-5 py-md-4">
-        <div class="testimonial-row">
-          <div id="owl-demo1" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4">
-            <div class="item">
-              <div class="testimonial-content">
-                <div class="testimonial">
-
-                  <blockquote>
-                    <q><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                      facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                    <div class="test-img">
-                      <img src="assets/images/team1.jpg" class="img-fluid" alt="client-img">
-                    </div>
-                    <div class="peopl">
-                      <h3>Dennis wilson</h3>
-                      <p class="indentity">Customer </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-content">
-                <div class="testimonial">
-
-                  <blockquote>
-                    <q><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                      facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                    <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid" alt="client-img">
-                    </div>
-                    <div class="peopl">
-                      <h3>Tommy sakura</h3>
-                      <p class="indentity">Customer </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-content">
-                <div class="testimonial">
-
-                  <blockquote>
-                    <q><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                      facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                    <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid" alt="client-img">
-                    </div>
-                    <div class="peopl">
-                      <h3>Roy Linderson</h3>
-                      <p class="indentity">Customer </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-content">
-                <div class="testimonial">
-
-                  <blockquote>
-                    <q><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita beatae
-                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis vitae
-                      facere aperiam sequi optio lacinia id ipsum non velit, culpa.
-                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                    <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid" alt="client-img">
-                    </div>
-                    <div class="peopl">
-                      <h3>Mike Thyson</h3>
-                      <p class="indentity">Customer </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /grids -->
-    </div>
-    <!-- //grids -->
-  </section>
-  <!-- //testimonials -->
-  <!--/Blog-Posts-->
-  <section class="w3l-blog py-5" id="blog">
-    <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-left">
-        <h6 class="title-subhny">Insight and Trends</h6>
-        <h3 class="title-w3l pb-sm-o pb-2">Latest Blog & News</h3>
-      </div>
-      <div class="row text-11">
-        <!--/services-grids-->
-        <div class="col-md-6 text11-content blog-grid-info text-left mt-5">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b3.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc">You can now listen to the entire
-                library of Design Better books for free </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate soluta est obcaecati, quam aperiam nam natus dicta tenetur? Dolore.</p>
-              <a href="#" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span
-                  class="fa fa-long-arrow-right ml-3" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 text11-content blog-grid-info text-left mt-5 pl-lg-4">
-          <div class="card">
-            <div class="card-header p-0 position-relative border-0">
-              <a href="#">
-                <img class="card-img-bottom d-block radius-image" src="assets/images/b4.jpg" alt="Card image cap">
-              </a>
-            </div>
-            <div class="card-body p-0 blog-details">
-              <h6 class="mt-4">May 12, 2021.</h6>
-              <a href="#admin" class="admin">- by Blanche Smith</a>
-              <br>
-              <a href="#" class="blog-desc">You can now listen to the entire
-                library of Design Better books for free </a>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
-                voluptate soluta est obcaecati, quam aperiam nam natus dicta tenetur? Dolore.</p>
-              <a href="#" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span
-                  class="fa fa-long-arrow-right ml-3" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--//Blog-Posts-->
+  
+  
   <!--/address-->
   <section class="home-w3l-content py-5">
     <div class="container">
@@ -565,6 +514,7 @@
     </div>
   </section>
   <!--//address-->
+
   <!-- footer -->
   <section class="w3l-footer-29-main">
     <div class="footer-29 py-5">

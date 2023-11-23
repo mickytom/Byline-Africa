@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Responsive Tab Section</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+
+        <!-- Tabs Section -->
+        <ul class="nav nav-tabs" id="myTabs">
+          <li class="nav-item">
+            <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1">Tab 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2">Tab 2</a>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+          <!-- Tab 1 Content -->
+          <div class="tab-pane fade show active" id="content1" style="min-height: 100vh;">
+            <h5>Tab 1 Content Goes Here</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row text-11">
+                <!-- Card 1 -->
+                <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative border-0">
+                      <a href="#">
+                        <img class="card-img-bottom d-block radius-image" src="assets/images/b3.jpg" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <h6 class="mt-4">May 12, 2021.</h6>
+                      <a href="#admin" class="admin">- by Blanche Smith</a>
+                      <br>
+                      <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                        voluptate...</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Card 2 -->
+                <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative border-0">
+                      <a href="#">
+                        <img class="card-img-bottom d-block radius-image" src="assets/images/b4.jpg" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <h6 class="mt-4">May 12, 2021.</h6>
+                      <a href="#admin" class="admin">- by Blanche Smith</a>
+                      <br>
+                      <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                        voluptate...</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Card 3 -->
+                <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative border-0">
+                      <a href="#">
+                        <img class="card-img-bottom d-block radius-image" src="assets/images/b3.jpg" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <h6 class="mt-4">May 12, 2021.</h6>
+                      <a href="#admin" class="admin">- by Blanche Smith</a>
+                      <br>
+                      <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                        voluptate...</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Card 4 -->
+                <div class="col-md-3 text11-content blog-grid-info text-left mt-5">
+                  <div class="card">
+                    <div class="card-header p-0 position-relative border-0">
+                      <a href="#">
+                        <img class="card-img-bottom d-block radius-image" src="assets/images/b4.jpg" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="card-body p-0 blog-details">
+                      <h6 class="mt-4">May 12, 2021.</h6>
+                      <a href="#admin" class="admin">- by Blanche Smith</a>
+                      <br>
+                      <a href="#" class="blog-desc"> Donations to South African Orphans </a>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum laboriosam
+                        voluptate...</p>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+          </div>
+
+          <!-- Tab 2 Content -->
+          <div class="tab-pane fade" id="content2" style="min-height: 100vh;">
+            <h5>Tab 2 Content Goes Here</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4 mt-md-0 mt-3">
+
+        <!-- Filter Component -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Filter</h5>
+            <!-- Add your filter components here -->
+            <label for="filterOption">Select Filter:</label>
+            <select class="form-select" id="filterOption">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

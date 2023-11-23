@@ -4636,6 +4636,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
+  
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
@@ -5015,6 +5016,10 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.col{
+  height: 300px;
 }
 
 .card {
@@ -15370,7 +15375,7 @@ p.home-w3l-content-grid-inf a {
   font-size: 1.4em;
   letter-spacing: 1px;
   text-transform: capitalize;
-  opacity: .9;
+  opacity: 100%;
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -15382,6 +15387,7 @@ p.home-w3l-content-grid-inf a {
 
 .galprojects-gd-content .crd--effect-3 .crd-info {
   position: absolute;
+  opacity: 80%;
   bottom: 10%;
   left: 10%;
   background: var(--bg-color);
@@ -15392,7 +15398,7 @@ p.home-w3l-content-grid-inf a {
 
 .galprojects-gd-content .crd--effect-3 .crd-text {
   font-size: 18px;
-  opacity: .9;
+  opacity: 100%;
   color: var(--font-color);
 }
 
